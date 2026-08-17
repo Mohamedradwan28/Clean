@@ -1,724 +1,562 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="كينج كلين  - شركة تنظيف فلل وشقق ومساكن بجدة  
-. خدمات تنظيف بالبخار، كنب، سجاد، خزانات، مكافحة حشرات. اتصل 0560943111">
-    <title>كينج كلين  |  king clean - تنظيف احترافي بجدة  </title>
-    
-    <!-- Fonts & Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    
-    <style>
-        :root {
-            --primary: #00b4d8;
-            --primary-dark: #0077b6;
-            --accent: #ffb703;
-            --dark: #0a1628;
-            --light: #f8f9fc;
-            --gray: #64748b;
-            --white: #ffffff;
-            --shadow: 0 10px 40px rgba(10, 22, 40, 0.15);
-            --radius: 16px;
-            --transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>نجار مكة المكرمة | فك وتركيب وتفصيل الأبواب وغرف النوم وصيانتها</title>
+<meta name="description" content="نجار محترف في مكة المكرمة: فك وتركيب غرف النوم والأثاث، تفصيل الأبواب والمطابخ وغرف النوم، صيانة الأثاث الخشبي. خدمة سريعة لجميع الأحياء على مدار الساعة. اتصل 0561143827">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Noto+Kufi+Arabic:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#f8f4ec;
+  --white:#ffffff;
+  --dark:#191310;
+  --dark2:#241b15;
+  --ink:#2b211a;
+  --muted:#7a6a58;
+  --wood:#8a5a2e;
+  --amber:#d9973f;
+  --amber2:#b97a24;
+  --amber-soft:#f6e7cf;
+  --wa:#1faf62;
+  --wa-dark:#128c50;
+  --line:rgba(138,90,46,.18);
+  --shadow:0 10px 30px rgba(41,26,10,.10);
+  --radius:18px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Almarai',sans-serif;background:var(--cream);color:var(--ink);line-height:1.8;overflow-x:hidden}
+h1,h2,h3,h4,.logo{font-family:'Noto Kufi Arabic',sans-serif}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+section{padding:90px 0;scroll-margin-top:90px}
+.container{width:min(1180px,92%);margin:0 auto}
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; }
-        body { font-family: 'Tajawal', sans-serif; background: var(--light); color: var(--dark); line-height: 1.7; overflow-x: hidden; }
+/* ===== الأزرار ===== */
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 30px;border-radius:50px;font-weight:800;font-size:16px;transition:.3s;border:2px solid transparent;cursor:pointer}
+.btn-amber{background:linear-gradient(135deg,var(--amber),var(--amber2));color:#fff;box-shadow:0 8px 20px rgba(217,151,63,.35)}
+.btn-amber:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(217,151,63,.5)}
+.btn-wa{background:linear-gradient(135deg,var(--wa),var(--wa-dark));color:#fff;box-shadow:0 8px 20px rgba(31,175,98,.35)}
+.btn-wa:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(31,175,98,.5)}
+.btn-ghost{border-color:rgba(255,255,255,.5);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.12)}
 
-        .container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
-        .section { padding: clamp(60px, 10vw, 120px) 0; position: relative; }
-        .section-title { text-align: center; margin-bottom: clamp(40px, 6vw, 70px); }
-        .section-title h2 {
-            font-size: clamp(2rem, 4vw, 3.2rem);
-            font-weight: 900;
-            background: linear-gradient(135deg, var(--dark), var(--primary));
-            -webkit-background-clip: text; background-clip: text; color: transparent; margin-bottom: 12px;
-        }
-        .section-title p { color: var(--gray); font-size: clamp(1rem, 2vw, 1.2rem); max-width: 650px; margin: 0 auto; }
-        
-        .btn {
-            display: inline-flex; align-items: center; gap: 10px;
-            padding: 16px 32px; border-radius: 50px; font-weight: 800; font-size: 1rem;
-            text-decoration: none; border: none; cursor: pointer;
-            transition: var(--transition); position: relative; overflow: hidden;
-        }
-        .btn::after {
-            content: ''; position: absolute; top: 50%; left: 50%; width: 0; height: 0;
-            background: rgba(255,255,255,0.3); border-radius: 50%;
-            transform: translate(-50%, -50%); transition: width 0.5s, height 0.5s;
-        }
-        .btn:hover::after { width: 300px; height: 300px; }
-        .btn-primary { background: var(--primary); color: var(--white); box-shadow: 0 10px 30px rgba(0,180,216,0.4); }
-        .btn-accent { background: var(--accent); color: var(--dark); box-shadow: 0 10px 30px rgba(255,183,3,0.4); }
-        .btn:hover { transform: translateY(-4px); box-shadow: 0 15px 40px rgba(0,0,0,0.2); }
+/* ===== الشريط العلوي ===== */
+.topbar{background:var(--dark);color:#e9ddca;font-size:14px;padding:8px 0}
+.topbar .container{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}
+.topbar a{color:var(--amber);font-weight:800}
+.topbar .dot{color:var(--amber)}
 
-        /* Loader */
-        .loader { position: fixed; inset: 0; background: var(--dark); display: grid; place-items: center; z-index: 9999; transition: opacity 0.5s, visibility 0.5s; }
-        .loader.hidden { opacity: 0; visibility: hidden; }
-        .loader-icon { font-size: 60px; color: var(--accent); animation: spin 1.5s linear infinite; }
-        @keyframes spin { to { transform: rotate(360deg); } }
+/* ===== الهيدر ===== */
+header{position:sticky;top:0;z-index:1000;background:rgba(248,244,236,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);transition:.3s}
+header.scrolled{box-shadow:var(--shadow)}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:14px 0}
+.logo{display:flex;align-items:center;gap:10px;font-size:22px;font-weight:900;color:var(--dark)}
+.logo .icon{width:46px;height:46px;border-radius:14px;background:linear-gradient(135deg,var(--amber),var(--wood));display:grid;place-items:center;font-size:22px;box-shadow:0 6px 14px rgba(138,90,46,.35)}
+.logo small{display:block;font-size:11px;color:var(--muted);font-weight:400;font-family:'Almarai'}
+.nav-links{display:flex;gap:26px;font-weight:700;font-size:15px}
+.nav-links a{position:relative;padding:6px 0;color:var(--ink);transition:.3s}
+.nav-links a:hover{color:var(--amber2)}
+.nav-links a::after{content:"";position:absolute;bottom:0;right:0;width:0;height:3px;border-radius:3px;background:var(--amber);transition:.3s}
+.nav-links a:hover::after{width:100%}
+.nav-cta{display:flex;gap:10px;align-items:center}
+.nav-cta .btn{padding:10px 22px;font-size:14px}
+.burger{display:none;font-size:28px;background:none;border:none;cursor:pointer;color:var(--dark)}
 
-        /* Navbar */
-        .navbar {
-            position: fixed; top: 0; left: 0; right: 0;
-            background: rgba(10, 22, 40, 0.85); backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px); z-index: 1000; padding: 12px 0; transition: var(--transition);
-        }
-        .navbar.scrolled { background: rgba(10, 22, 40, 0.95); box-shadow: 0 5px 20px rgba(0,0,0,0.2); padding: 8px 0; }
-        .nav-content { display: flex; align-items: center; justify-content: space-between; }
-        .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--white); }
-        .logo i { font-size: 32px; color: var(--accent); }
-        .logo-text h1 { font-size: 24px; font-weight: 900; line-height: 1.1; }
-        .logo-text span { font-size: 13px; color: var(--primary); letter-spacing: 2px; }
-        .nav-links { display: flex; gap: 32px; list-style: none; }
-        .nav-links a { color: rgba(255,255,255,0.85); text-decoration: none; font-weight: 700; transition: var(--transition); position: relative; padding: 8px 0; }
-        .nav-links a::after { content: ''; position: absolute; bottom: 0; right: 0; width: 0; height: 2px; background: var(--accent); transition: width 0.3s; }
-        .nav-links a:hover { color: var(--white); }
-        .nav-links a:hover::after { width: 100%; }
-        .nav-actions { display: flex; gap: 12px; }
-        .nav-actions .btn { padding: 12px 24px; font-size: 0.9rem; }
-        .mobile-toggle { display: none; background: none; border: none; color: var(--white); font-size: 28px; cursor: pointer; }
+/* ===== الهيرو ===== */
+.hero{position:relative;min-height:94vh;display:flex;align-items:center;color:#fff;padding:120px 0 140px;margin-top:-90px;background:linear-gradient(to left,rgba(20,13,8,.88),rgba(20,13,8,.55)),url('hero.jpg') center/cover no-repeat}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(217,151,63,.18);border:1px solid rgba(217,151,63,.5);color:#f4cf94;padding:8px 20px;border-radius:50px;font-size:14px;font-weight:700;margin-bottom:22px;backdrop-filter:blur(6px)}
+.hero h1{font-size:clamp(30px,5vw,56px);font-weight:900;line-height:1.35;margin-bottom:20px}
+.hero h1 span{background:linear-gradient(135deg,#f2c078,var(--amber));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{font-size:clamp(15px,1.6vw,19px);color:#e8ddcd;max-width:640px;margin-bottom:34px}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap}
+.hero-stats{position:absolute;bottom:-70px;right:0;left:0}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.stat{background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow);text-align:center;padding:24px 10px;border-top:4px solid var(--amber)}
+.stat b{font-size:30px;color:var(--dark);font-family:'Noto Kufi Arabic';display:block}
+.stat span{color:var(--muted);font-size:14px;font-weight:700}
 
-        /* Hero */
-        .hero {
-            min-height: 100vh;
-            background: linear-gradient(rgba(10,22,40,0.7), rgba(10,22,40,0.85)), 
-                        url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
-            display: grid; align-items: center; padding-top: 100px; position: relative; overflow: hidden;
-        }
-        .hero::before {
-            content: ''; position: absolute; inset: 0;
-            background: radial-gradient(circle at 30% 70%, rgba(0,180,216,0.3), transparent 60%);
-        }
-        .hero-content { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(30px, 5vw, 60px); align-items: center; position: relative; z-index: 2; }
-        .hero-badge {
-            display: inline-flex; align-items: center; gap: 8px;
-            background: rgba(255,255,255,0.15); backdrop-filter: blur(8px);
-            padding: 8px 16px; border-radius: 50px; margin-bottom: 20px;
-            border: 1px solid rgba(255,255,255,0.2); color: var(--white);
-            font-weight: 700; font-size: 0.9rem;
-        }
-        .hero h2 { font-size: clamp(2.5rem, 5vw, 4rem); color: var(--white); font-weight: 900; line-height: 1.2; margin-bottom: 20px; }
-        .hero h2 span { color: var(--accent); }
-        .hero p { color: rgba(255,255,255,0.85); font-size: clamp(1.1rem, 2vw, 1.3rem); margin-bottom: 32px; max-width: 600px; }
-        .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
-        .hero-visual { position: relative; }
-        .hero-img-box {
-            border-radius: 24px; overflow: hidden; box-shadow: 0 30px 60px rgba(0,0,0,0.4);
-            transform: perspective(1000px) rotateY(-12deg) rotateX(5deg); transition: var(--transition);
-        }
-        .hero-img-box:hover { transform: perspective(1000px) rotateY(0) rotateX(0); }
-        .hero-img-box img { width: 100%; display: block; }
-        .float-card {
-            position: absolute; background: var(--white); padding: 16px 24px;
-            border-radius: 16px; box-shadow: var(--shadow); animation: float 4s ease-in-out infinite;
-        }
-        .float-card i { font-size: 28px; color: var(--primary); margin-bottom: 8px; }
-        .float-card h4 { font-size: 24px; font-weight: 900; color: var(--dark); margin: 0 0 5px; }
-        .float-card p { color: var(--gray); font-size: 0.9rem; margin: 0; }
-        .fc-1 { top: 10%; left: -30px; animation-delay: 0s; }
-        .fc-2 { bottom: 15%; left: 10px; animation-delay: 2s; }
-        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
+/* ===== عناوين الأقسام ===== */
+.sec-head{text-align:center;max-width:720px;margin:0 auto 60px}
+.sec-tag{display:inline-block;background:var(--amber-soft);color:var(--amber2);border:1px solid var(--line);padding:6px 20px;border-radius:50px;font-weight:800;font-size:14px;margin-bottom:14px}
+.sec-head h2{font-size:clamp(24px,3.4vw,38px);font-weight:900;color:var(--dark);margin-bottom:12px}
+.sec-head p{color:var(--muted)}
 
-        /* Stats */
-        .stats { background: var(--white); margin-top: -60px; position: relative; z-index: 10; padding: 60px 0; border-radius: 30px 30px 0 0; }
-        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; }
-        .stat-card {
-            background: var(--light); padding: 30px 20px; border-radius: 20px; text-align: center;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.05); transition: var(--transition); border: 2px solid transparent;
-        }
-        .stat-card:hover { transform: translateY(-8px); border-color: var(--primary); background: var(--white); box-shadow: var(--shadow); }
-        .stat-card i { font-size: 40px; color: var(--primary); margin-bottom: 12px; }
-        .stat-card h3 { font-size: 2.5rem; font-weight: 900; color: var(--dark); margin-bottom: 5px; }
-        .stat-card p { color: var(--gray); font-weight: 600; }
+/* ===== الخدمات ===== */
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.service{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:34px 26px;transition:.35s;position:relative;overflow:hidden}
+.service::before{content:"";position:absolute;top:0;right:0;width:100%;height:4px;background:linear-gradient(to left,var(--amber),var(--wood));transform:scaleX(0);transform-origin:right;transition:.4s}
+.service:hover{transform:translateY(-8px);box-shadow:var(--shadow)}
+.service:hover::before{transform:scaleX(1)}
+.service .ico{width:64px;height:64px;border-radius:18px;background:linear-gradient(135deg,var(--amber-soft),#fff);border:1px solid var(--line);display:grid;place-items:center;font-size:30px;margin-bottom:20px}
+.service h3{font-size:19px;color:var(--dark);margin-bottom:10px}
+.service p{color:var(--muted);font-size:14.5px;margin-bottom:16px}
+.service a{color:var(--amber2);font-weight:800;font-size:14px}
+.service a:hover{text-decoration:underline}
 
-        /* Services */
-        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px; }
-        .service-card {
-            background: var(--white); border-radius: 24px; overflow: hidden;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.08); transition: var(--transition); position: relative;
-        }
-        .service-card:hover { transform: translateY(-12px); box-shadow: var(--shadow); }
-        .service-img { height: 220px; overflow: hidden; position: relative; }
-        .service-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s; }
-        .service-card:hover .service-img img { transform: scale(1.1); }
-        .service-badge {
-            position: absolute; top: 16px; right: 16px;
-            background: var(--accent); color: var(--dark);
-            padding: 6px 14px; border-radius: 50px; font-weight: 800; font-size: 0.8rem;
-        }
-        .service-content { padding: 24px; position: relative; }
-        .service-icon {
-            position: absolute; top: -30px; left: 24px;
-            width: 60px; height: 60px; background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-            border-radius: 16px; display: grid; place-items: center; color: var(--white); font-size: 24px;
-            box-shadow: 0 8px 20px rgba(0,180,216,0.4);
-        }
-        .service-content h3 { font-size: 1.4rem; font-weight: 800; margin-bottom: 10px; margin-top: 15px; }
-        .service-content p { color: var(--gray); margin-bottom: 20px; }
-        .service-link { color: var(--primary); font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: gap 0.3s; }
-        .service-link:hover { gap: 14px; color: var(--primary-dark); }
+/* ===== لماذا نحن ===== */
+.why{background:var(--white)}
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.why-img{position:relative}
+.why-img img{border-radius:24px;box-shadow:var(--shadow)}
+.why-img .exp{position:absolute;bottom:-24px;left:24px;background:linear-gradient(135deg,var(--amber),var(--amber2));color:#fff;border-radius:18px;padding:18px 28px;text-align:center;box-shadow:0 12px 26px rgba(217,151,63,.45)}
+.why-img .exp b{font-size:30px;font-family:'Noto Kufi Arabic';display:block}
+.why-txt h2{font-size:clamp(24px,3vw,34px);color:var(--dark);margin-bottom:16px}
+.why-txt>p{color:var(--muted);margin-bottom:26px}
+.checks li{display:flex;gap:12px;align-items:flex-start;margin-bottom:14px;font-weight:700;color:var(--ink)}
+.checks li i{flex:0 0 26px;height:26px;border-radius:50%;background:var(--amber-soft);color:var(--amber2);display:grid;place-items:center;font-style:normal;font-size:14px;margin-top:4px}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:70px}
+.feature{background:var(--cream);border:1px solid var(--line);border-radius:var(--radius);padding:26px 18px;text-align:center;transition:.3s}
+.feature:hover{transform:translateY(-6px);background:#fff;box-shadow:var(--shadow)}
+.feature .ico{font-size:34px;margin-bottom:12px}
+.feature h4{color:var(--dark);margin-bottom:6px;font-size:17px}
+.feature p{color:var(--muted);font-size:13.5px}
 
-        /* Features */
-        .features { background: linear-gradient(135deg, var(--dark), #152640); color: var(--white); }
-        .features .section-title h2, .features .section-title p { color: var(--white); }
-        .features .section-title p { opacity: 0.8; }
-        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 28px; }
-        .feature-item {
-            background: rgba(255,255,255,0.08); backdrop-filter: blur(10px);
-            padding: 32px 24px; border-radius: 20px; text-align: center;
-            border: 1px solid rgba(255,255,255,0.1); transition: var(--transition);
-        }
-        .feature-item:hover { background: rgba(255,255,255,0.15); transform: translateY(-6px); border-color: var(--accent); }
-        .feature-item i { font-size: 48px; color: var(--accent); margin-bottom: 18px; display: inline-block; transition: transform 0.6s; }
-        .feature-item:hover i { transform: rotateY(180deg); }
-        .feature-item h3 { font-size: 1.3rem; margin-bottom: 10px; font-weight: 800; }
-        .feature-item p { opacity: 0.8; font-size: 0.95rem; }
+/* ===== خطوات العمل ===== */
+.steps{background:linear-gradient(135deg,var(--dark),var(--dark2));color:#efe6d8}
+.steps .sec-head h2{color:#fff}
+.steps .sec-head p{color:#c9bba6}
+.steps .sec-tag{background:rgba(217,151,63,.15);border-color:rgba(217,151,63,.4)}
+.steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.step{text-align:center;position:relative;padding:10px}
+.step .num{width:70px;height:70px;margin:0 auto 20px;border-radius:50%;background:linear-gradient(135deg,var(--amber),var(--amber2));color:#fff;font-size:26px;font-weight:900;display:grid;place-items:center;font-family:'Noto Kufi Arabic';box-shadow:0 10px 24px rgba(217,151,63,.4)}
+.step h4{margin-bottom:8px;font-size:18px}
+.step p{color:#c9bba6;font-size:14px}
 
-        /* Testimonials */
-        .testimonials-slider { max-width: 900px; margin: 0 auto; position: relative; overflow: hidden; }
-        .testimonial-track { display: flex; transition: transform 0.6s cubic-bezier(0.4,0,0.2,1); }
-        .testimonial { min-width: 100%; padding: 40px 60px; text-align: center; }
-        .testimonial img { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; border: 3px solid var(--primary); }
-        .testimonial p { font-size: 1.2rem; font-style: italic; margin-bottom: 20px; color: var(--dark); }
-        .testimonial h4 { font-weight: 800; color: var(--primary-dark); margin: 5px 0 2px; }
-        .testimonial span { color: var(--gray); font-size: 0.9rem; }
-        .slider-nav { display: flex; justify-content: center; gap: 12px; margin-top: 30px; }
-        .slider-dot { width: 12px; height: 12px; border-radius: 50%; background: var(--gray); cursor: pointer; transition: 0.3s; }
-        .slider-dot.active { background: var(--primary); transform: scale(1.2); }
+/* ===== المعرض ===== */
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.g-item{position:relative;border-radius:var(--radius);overflow:hidden;cursor:pointer;box-shadow:var(--shadow)}
+.g-item img{height:280px;width:100%;object-fit:cover;transition:.6s}
+.g-item:hover img{transform:scale(1.08)}
+.g-item .cap{position:absolute;inset:auto 0 0 0;background:linear-gradient(to top,rgba(20,13,8,.9),transparent);color:#fff;padding:40px 18px 16px;font-weight:800;transform:translateY(12px);opacity:0;transition:.4s}
+.g-item:hover .cap{transform:translateY(0);opacity:1}
 
-        /* Contact */
-        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
-        .contact-box, .contact-form { background: var(--white); padding: 36px; border-radius: 24px; box-shadow: var(--shadow); }
-        .contact-item { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; padding: 16px; background: var(--light); border-radius: 14px; transition: 0.3s; }
-        .contact-item:hover { background: var(--primary); color: var(--white); transform: translateX(-6px); }
-        .contact-item i { width: 50px; height: 50px; background: var(--white); border-radius: 50%; display: grid; place-items: center; color: var(--primary); font-size: 20px; transition: 0.3s; }
-        .contact-item:hover i { color: var(--primary); background: var(--white); }
-        .contact-item h4 { font-size: 1.1rem; margin-bottom: 4px; }
-        .contact-item p, .contact-item a { color: inherit; text-decoration: none; font-size: 0.95rem; }
-        .contact-item a:hover { text-decoration: underline; }
-        .form-group { margin-bottom: 20px; }
-        .form-group label { display: block; margin-bottom: 8px; font-weight: 700; color: var(--dark); }
-        .form-control {
-            width: 100%; padding: 14px 16px; border: 2px solid #e2e8f0; border-radius: 12px;
-            font-family: inherit; font-size: 1rem; transition: 0.3s; background: var(--light);
-        }
-        .form-control:focus { outline: none; border-color: var(--primary); background: var(--white); box-shadow: 0 0 0 4px rgba(0,180,216,0.2); }
-        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+/* ===== المقالات ===== */
+.articles{background:var(--white)}
+.articles-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+.article{background:var(--cream);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:.3s}
+.article:hover{box-shadow:var(--shadow)}
+.article img{height:230px;width:100%;object-fit:cover}
+.article .body{padding:26px}
+.article .meta{display:flex;gap:14px;font-size:12.5px;color:var(--muted);margin-bottom:10px;font-weight:700}
+.article .meta b{color:var(--amber2)}
+.article h3{font-size:19px;color:var(--dark);margin-bottom:10px;line-height:1.6}
+.article .excerpt{color:var(--muted);font-size:14.5px;margin-bottom:16px}
+.article .full{display:none;border-top:1px dashed var(--line);padding-top:16px;margin-top:6px;color:var(--muted);font-size:14.5px}
+.article .full p{margin-bottom:12px}
+.article .full li{margin-bottom:8px;padding-right:18px;position:relative}
+.article .full li::before{content:"✦";position:absolute;right:0;color:var(--amber)}
+.article.open .full{display:block}
+.read-more{background:none;border:none;color:var(--amber2);font-weight:800;font-size:14px;cursor:pointer;font-family:'Almarai'}
+.read-more:hover{text-decoration:underline}
 
-        /* Footer */
-        footer { background: var(--dark); color: rgba(255,255,255,0.8); padding: 70px 0 30px; }
-        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 40px; margin-bottom: 40px; }
-        .footer-col h3 { color: var(--white); font-size: 1.3rem; margin-bottom: 20px; position: relative; padding-bottom: 12px; }
-        .footer-col h3::after { content: ''; position: absolute; bottom: 0; right: 0; width: 40px; height: 3px; background: var(--accent); border-radius: 2px; }
-        .footer-col p, .footer-col a { color: inherit; text-decoration: none; display: block; margin-bottom: 10px; transition: 0.3s; }
-        .footer-col a:hover { color: var(--accent); padding-right: 8px; }
-        .social-links { display: flex; gap: 12px; margin-top: 20px; }
-        .social-links a { width: 42px; height: 42px; background: rgba(255,255,255,0.1); border-radius: 50%; display: grid; place-items: center; transition: 0.3s; }
-        .social-links a:hover { background: var(--primary); transform: translateY(-5px); }
-        .copyright { text-align: center; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.1); color: rgba(255,255,255,0.5); font-size: 0.9rem; }
+/* ===== آراء العملاء ===== */
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.testi{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:30px;position:relative;transition:.3s}
+.testi:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.testi .stars{color:var(--amber);font-size:18px;margin-bottom:14px;letter-spacing:2px}
+.testi p{color:var(--muted);font-size:14.5px;margin-bottom:20px}
+.testi .who{display:flex;align-items:center;gap:12px}
+.testi .who .av{width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,var(--amber),var(--wood));color:#fff;display:grid;place-items:center;font-weight:900;font-size:18px}
+.testi .who b{display:block;color:var(--dark)}
+.testi .who span{font-size:12.5px;color:var(--muted)}
 
-        /* Floating Buttons */
-        .floating-actions { position: fixed; bottom: 24px; left: 24px; display: flex; flex-direction: column; gap: 12px; z-index: 900; }
-        .fab {
-            width: 60px; height: 60px; border-radius: 50%; display: grid; place-items: center;
-            color: var(--white); font-size: 24px; text-decoration: none; box-shadow: 0 8px 24px rgba(0,0,0,0.25);
-            transition: 0.3s; position: relative;
-        }
-        .fab::before {
-            content: attr(data-tooltip); position: absolute; right: 70px; top: 50%; transform: translateY(-50%);
-            background: var(--white); color: var(--dark); padding: 8px 14px; border-radius: 8px; font-size: 0.85rem; font-weight: 700;
-            opacity: 0; pointer-events: none; transition: 0.3s; white-space: nowrap; box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-        }
-        .fab:hover::before { opacity: 1; right: 75px; }
-        .fab.whatsapp { background: #25d366; }
-        .fab.call { background: var(--accent); }
-        .fab:hover { transform: scale(1.1) rotate(8deg); }
+/* ===== بانر الاتصال ===== */
+.cta{background:linear-gradient(135deg,rgba(20,13,8,.92),rgba(60,38,15,.88)),url('craft.jpg') center/cover fixed;color:#fff;text-align:center}
+.cta h2{font-size:clamp(24px,3.6vw,40px);margin-bottom:14px}
+.cta p{color:#e2d5c0;max-width:600px;margin:0 auto 30px}
+.cta .phone{font-size:clamp(28px,4.5vw,50px);font-weight:900;color:var(--amber);font-family:'Noto Kufi Arabic';direction:ltr;display:block;margin-bottom:30px;letter-spacing:2px}
+.cta .phone:hover{color:#f2c078}
 
-        /* Responsive */
-        @media (max-width: 992px) {
-            .hero-content { grid-template-columns: 1fr; text-align: center; }
-            .hero p { margin: 0 auto 32px; }
-            .hero-actions { justify-content: center; }
-            .hero-visual { display: none; }
-            .contact-grid { grid-template-columns: 1fr; }
-            .nav-links { position: fixed; top: 0; right: -100%; width: 80%; max-width: 320px; height: 100vh; background: var(--dark); flex-direction: column; padding: 80px 30px 30px; transition: 0.4s; gap: 24px; }
-            .nav-links.active { right: 0; }
-            .mobile-toggle { display: block; }
-        }
-        @media (max-width: 600px) {
-            .form-row { grid-template-columns: 1fr; }
-            .testimonial { padding: 30px 20px; }
-            .floating-actions { bottom: 16px; left: 16px; }
-            .fab { width: 52px; height: 52px; font-size: 20px; }
-        }
+/* ===== الفوتر ===== */
+footer{background:var(--dark);color:#cbbda8;padding:70px 0 0}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.4fr;gap:40px;padding-bottom:50px}
+footer h4{color:#fff;margin-bottom:20px;font-size:17px}
+footer .logo{color:#fff;margin-bottom:18px}
+footer p,footer li{font-size:14px;margin-bottom:10px}
+footer a:hover{color:var(--amber)}
+.foot-links a{display:block;margin-bottom:10px;transition:.3s}
+.foot-links a:hover{padding-right:6px}
+.areas span{display:inline-block;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:50px;padding:4px 14px;margin:0 6px 8px 0;font-size:12.5px}
+.copy{border-top:1px solid rgba(255,255,255,.1);padding:20px 0;text-align:center;font-size:13.5px}
+.copy b{color:var(--amber)}
 
-        /* Animations */
-        .fade-up { opacity: 0; transform: translateY(30px); transition: 0.8s cubic-bezier(0.4,0,0.2,1); }
-        .fade-up.visible { opacity: 1; transform: translateY(0); }
-    </style>
+/* ===== أزرار عائمة ===== */
+.floats{position:fixed;bottom:24px;left:24px;z-index:999;display:flex;flex-direction:column;gap:12px}
+.floats a{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;font-size:26px;color:#fff;box-shadow:0 10px 24px rgba(0,0,0,.25);transition:.3s}
+.floats a:hover{transform:scale(1.1)}
+.floats .wa{background:linear-gradient(135deg,#25d366,#128c50);animation:pulse 2s infinite}
+.floats .call{background:linear-gradient(135deg,var(--amber),var(--amber2))}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.5)}70%{box-shadow:0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+
+/* ===== الظهور عند التمرير ===== */
+.reveal{opacity:0;transform:translateY(30px);transition:.8s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+/* ===== التجاوب ===== */
+@media(max-width:992px){
+  .services-grid,.gallery-grid,.testi-grid{grid-template-columns:repeat(2,1fr)}
+  .steps-grid,.features{grid-template-columns:repeat(2,1fr)}
+  .why-grid,.articles-grid{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .nav-links{display:none;position:absolute;top:100%;right:0;left:0;background:var(--cream);flex-direction:column;padding:20px 5%;gap:14px;border-bottom:1px solid var(--line);box-shadow:var(--shadow)}
+  .nav-links.open{display:flex}
+  .burger{display:block}
+  .nav-cta .btn-ghost{display:none}
+}
+@media(max-width:600px){
+  .services-grid,.gallery-grid,.testi-grid,.stats-grid,.steps-grid,.features,.foot-grid{grid-template-columns:1fr}
+  .hero-stats{position:static;margin-top:50px}
+  .hero{padding-top:160px}
+  section{padding:70px 0}
+}
+</style>
 </head>
 <body>
 
-    <!-- Loader -->
-    <div class="loader" id="loader">
-        <i class="fas fa-spinner loader-icon"></i>
-    </div>
+<!-- الشريط العلوي -->
+<div class="topbar">
+  <div class="container">
+    <span>🕋 نخدم جميع أحياء مكة المكرمة <span class="dot">✦</span> متاحون على مدار الساعة 24/7</span>
+    <span>للطلب والاستفسار: <a href="tel:0561143827"><span dir="ltr">0561143827</span></a></span>
+  </div>
+</div>
 
-    <!-- Navbar -->
-    <nav class="navbar" id="navbar">
-        <div class="container nav-content">
-            <a href="#" class="logo">
-                <i class="fas fa-sparkles"></i>
-                <div class="logo-text">
-                    <h1>كينج كلين </h1>
-                    <span>KING CLEAN </span>
-                </div>
-            </a>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home">الرئيسية</a></li>
-                <li><a href="#services">خدماتنا</a></li>
-                <li><a href="#features">لماذا نحن</a></li>
-                <li><a href="#reviews">آراء العملاء</a></li>
-                <li><a href="#contact">تواصل معنا</a></li>
-            </ul>
-            <div class="nav-actions">
-                <a href="tel:0560943111" class="btn btn-accent"><i class="fas fa-phone"></i> اتصل</a>
-                <button class="mobile-toggle" id="mobileToggle"><i class="fas fa-bars"></i></button>
-            </div>
-        </div>
+<!-- الهيدر -->
+<header id="header">
+  <div class="container nav">
+    <a href="#" class="logo">
+      <span class="icon">🪚</span>
+      <span>نجار مكة<small>فك · تركيب · تفصيل · صيانة</small></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">الرئيسية</a>
+      <a href="#services">خدماتنا</a>
+      <a href="#why">لماذا نحن</a>
+      <a href="#gallery">أعمالنا</a>
+      <a href="#articles">مقالات</a>
+      <a href="#testi">آراء العملاء</a>
+      <a href="#contact">اتصل بنا</a>
     </nav>
-
-    <!-- Hero -->
-    <section class="hero" id="home">
-        <div class="container hero-content">
-            <div>
-                <div class="hero-badge"><i class="fas fa-certificate"></i> معتمدون من أمانة بجدة
-                </div>
-                <h2>نظافة <span>احترافية</span> تجعل منزلك يلمع</h2>
-                <p>خدمات تنظيف متكاملة للفلل، الشقق، المساكن والعمائر. نستخدم أحدث تقنيات البخار والمواد الآمنة لضمان بيئة صحية ونظيفة لعائلتك.</p>
-                <div class="hero-actions">
-                    <a href="tel:0560943111" class="btn btn-accent"><i class="fas fa-phone"></i> 0560943111</a>
-                    <a href="https://wa.me/9660560943111" target="_blank" class="btn btn-primary" style="background: #25d366;"><i class="fab fa-whatsapp"></i> واتساب</a>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <div class="hero-img-box">
-                    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&auto=format&fit=crop&q=80" alt="تنظيف احترافي">
-                </div>
-                <div class="float-card fc-1">
-                    <i class="fas fa-home"></i>
-                    <h4>+5000</h4>
-                    <p>منزل تم تنظيفه</p>
-                </div>
-                <div class="float-card fc-2">
-                    <i class="fas fa-star"></i>
-                    <h4>4.9/5</h4>
-                    <p>تقييم العملاء</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Stats -->
-    <section class="stats">
-        <div class="container stats-grid">
-            <div class="stat-card fade-up">
-                <i class="fas fa-building"></i>
-                <h3 class="counter" data-target="5000">0</h3>
-                <p>فيلا وشقة</p>
-            </div>
-            <div class="stat-card fade-up" style="transition-delay: 0.1s;">
-                <i class="fas fa-users"></i>
-                <h3 class="counter" data-target="3000">0</h3>
-                <p>عميل راضٍ</p>
-            </div>
-            <div class="stat-card fade-up" style="transition-delay: 0.2s;">
-                <i class="fas fa-user-tie"></i>
-                <h3 class="counter" data-target="120">0</h3>
-                <p>فني محترف</p>
-            </div>
-            <div class="stat-card fade-up" style="transition-delay: 0.3s;">
-                <i class="fas fa-award"></i>
-                <h3 class="counter" data-target="12">0</h3>
-                <p>سنة خبرة</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services -->
-    <section class="section" id="services">
-        <div class="container">
-            <div class="section-title fade-up">
-                <h2>خدماتنا المتكاملة</h2>
-                <p>حلول تنظيف ذكية تناسب كل مساحة واحتياج</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card fade-up">
-                    <div class="service-img">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT533vnPgLgosKybYr7JkACPwhrns4Yn5RH6Y7TRj0FsZjYWYDaFJrD9ctS&s=10" alt="تنظيف فلل">
-                        <span class="service-badge">الأكثر طلباً</span>
-                    </div>
-                    <div class="service-content">
-                        <div class="service-icon"><i class="fas fa-home"></i></div>
-                        <h3>تنظيف الفلل والقصور</h3>
-                        <p>تنظيف شامل من الداخل والخارج مع تعقيم الأسطح وتنظيف النوافذ والحدائق.</p>
-                        <a href="tel:0560943111" class="service-link">اطلب الخدمة <i class="fas fa-arrow-left"></i></a>
-                    </div>
-                </div>
-
-                <div class="service-card fade-up">
-                    <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600&auto=format&fit=crop&q=80" alt="تنظيف شقق">
-                    </div>
-                    <div class="service-content">
-                        <div class="service-icon"><i class="fas fa-building"></i></div>
-                        <h3>تنظيف الشقق والمساكن</h3>
-                        <p>خدمة سريعة واحترافية تناسب الجداول المزدحمة مع ضمان نظافة مثالية.</p>
-                        <a href="tel:0560943111" class="service-link">اطلب الخدمة <i class="fas fa-arrow-left"></i></a>
-                    </div>
-                </div>
-
-                <div class="service-card fade-up">
-                    <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&auto=format&fit=crop&q=80" alt="تنظيف كنب وسجاد">
-                    </div>
-                    <div class="service-content">
-                        <div class="service-icon"><i class="fas fa-couch"></i></div>
-                        <h3>تنظيف الكنب والسجاد</h3>
-                        <p>إزالة البقع العنيدة والغبار العميق بالبخار مع تعقيم وتجديد الألوان.</p>
-                        <a href="tel:0560943111" class="service-link">اطلب الخدمة <i class="fas fa-arrow-left"></i></a>
-                    </div>
-                </div>
-
-                <!-- ✅ خدمة جديدة 1 -->
-                <div class="service-card fade-up">
-                    <div class="service-img">
-                        <img src="https://didiclean.com/wp-content/uploads/2025/10/%D8%AA%D9%86%D8%B8%D9%8A%D9%81-%D8%AE%D8%B2%D8%A7%D9%86%D8%A7%D8%AA-2.webp
-" alt="تنظيف الخزانات">
-                    </div>
-                    <div class="service-content">
-                        <div class="service-icon"><i class="fas fa-water"></i></div>
-                        <h3>تنظيف وتعقيم الخزانات</h3>
-                        <p>غسيل وتعقيم الخزانات الأرضية والعلوية بأحدث المعدات لضمان مياه نقية وآمنة لعائلتك.</p>
-                        <a href="tel:0560943111" class="service-link">اطلب الخدمة <i class="fas fa-arrow-left"></i></a>
-                    </div>
-                </div>
-
-                <!-- ✅ خدمة جديدة 2 -->
-                <div class="service-card fade-up">
-                    <div class="service-img">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-RcaWjKcLrhV01kPr7r10TIrV5P8hb10e-u8UaNwn3hr99T4dCHCxAuw&s=10" alt="مكافحة الحشرات">
-                    </div>
-                    <div class="service-content">
-                        <div class="service-icon"><i class="fas fa-bug"></i></div>
-                        <h3>مكافحة الحشرات والآفات</h3>
-                        <p>قضاء نهائي على الصراصير، النمل، الفئران وبق الفراش باستخدام مواد مرخصة وآمنة 100%.</p>
-                        <a href="tel:0560943111" class="service-link">اطلب الخدمة <i class="fas fa-arrow-left"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features -->
-    <section class="section features" id="features">
-        <div class="container">
-            <div class="section-title fade-up">
-                <h2>لماذا يختارك الجميع كينج كلين ؟</h2>
-                <p>نلتزم بأعلى معايير الجودة والأمان في كل مهمة</p>
-            </div>
-            <div class="features-grid">
-                <div class="feature-item fade-up">
-                    <i class="fas fa-shield-virus"></i>
-                    <h3>مواد آمنة 100%</h3>
-                    <p>معتمدة دولياً وصديقة للأطفال والحيوانات الأليفة</p>
-                </div>
-                <div class="feature-item fade-up">
-                    <i class="fas fa-clock"></i>
-                    <h3>التزام بالموعد</h3>
-                    <p>نصل في الوقت المحدد وننهي العمل بكفاءة عالية</p>
-                </div>
-                <div class="feature-item fade-up">
-                    <i class="fas fa-hand-holding-usd"></i>
-                    <h3>أسعار شفافة</h3>
-                    <p>بدون رسوم خفية مع عروض وخصومات مستمرة</p>
-                </div>
-                <div class="feature-item fade-up">
-                    <i class="fas fa-headset"></i>
-                    <h3>دعم على مدار الساعة</h3>
-                    <p>فريق خدمة عملاء جاهز للرد والاستفسار 24/7</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="section" id="reviews">
-        <div class="container">
-            <div class="section-title fade-up">
-                <h2>ماذا يقول عملاؤنا؟</h2>
-                <p>ثقة آلاف العملاء هي أكبر شهادة لنا</p>
-            </div>
-            <div class="testimonials-slider">
-                <div class="testimonial-track" id="track">
-                    <div class="testimonial">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop&q=80" alt="عميل">
-                        <p>"تعاملت مع شركات كثيرة لكن كلين لايف مختلف تماماً. نظافة الفلة كانت أسطورية والفريق محترف جداً."</p>
-                        <h4>أحمد المالكي</h4>
-                    </div>
-                    <div class="testimonial">
-                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&auto=format&fit=crop&q=80" alt="عميل">
-                        <p>"السجاد والكنب رجعوا كأنهم جدد! تقنية البخار أزلت بقع كنت أعتقد إنها مستحيلة. شكراً لكم."</p>
-                       
-                    </div>
-                    <div class="testimonial">
-                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&auto=format&fit=crop&q=80" alt="عميل">
-                        <p>"خدمة سريعة، أسعار معقولة، والنتيجة مضمونة. أنصح الجميع بالتعامل معهم خصوصاً قبل المناسبات."</p>
-                        <h4>خالد الجهني</h4>
-                    
-                    </div>
-                </div>
-                <div class="slider-nav" id="sliderNav"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section class="section" id="contact">
-        <div class="container">
-            <div class="section-title fade-up">
-                <h2>جاهز لبيت نظيف ومشرق؟</h2>
-                <p>تواصل معنا الآن واحصل على عرض سعر مجاني خلال دقائق</p>
-            </div>
-            <div class="contact-grid">
-                <div class="contact-box fade-up">
-                    <div class="contact-item">
-                        <i class="fas fa-phone-alt"></i>
-                        <div>
-                            <h4>اتصل مباشرة</h4>
-                            <a href="tel:0560943111">0560943111</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-whatsapp"></i>
-                        <div>
-                            <h4>واتساب</h4>
-                            <a href="https://wa.me/0560943111" target="_blank">0560943111</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>نغطي كامل  بجدة  </h4>
-                            
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-clock"></i>
-                        <div>
-                            <h4>ساعات العمل</h4>
-                            <p>يومياً من 7 صباحاً حتى 11 مساءً</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form fade-up">
-                    <form id="contactForm">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label>الاسم الكامل</label>
-                                <input type="text" class="form-control" placeholder="مثال: محمد عبدالله" required>
-                            </div>
-                            <div class="form-group">
-                                <label>رقم الجوال</label>
-                                <input type="tel" class="form-control" placeholder="0560943111" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label>نوع الخدمة</label>
-                            <select class="form-control" required>
-                                <option value="">اختر الخدمة المطلوبة</option>
-                                <option>تنظيف فلل</option>
-                                <option>تنظيف شقق/مساكن</option>
-                                <option>تنظيف كنب وسجاد</option>
-                                <option>تنظيف وتعقيم خزانات</option>
-                                <option>مكافحة حشرات</option>
-                                <option>عقد تنظيف دوري</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label>تفاصيل إضافية</label>
-                            <textarea class="form-control" rows="4" placeholder="عدد الغرف، المساحة التقريبية، أي ملاحظات..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
-                            <i class="fas fa-paper-plane"></i> إرسال الطلب
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <a href="#" class="logo" style="margin-bottom: 20px;">
-                        <i class="fas fa-sparkles"></i>
-                        <div class="logo-text">
-                            <h1 style="font-size: 22px;">كينج كلين </h1>
-                            <span style="font-size: 12px; color: var(--gray);">CLEAN LIFE</span>
-                        </div>
-                    </a>
-                    <p>شركة رائدة في خدمات التنظيف والتعقيم بجدة  . نجمع بين الخبرة، التقنية، والاحتراف لنقدم لك أفضل النتائج.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-snapchat"></i></a>
-                        <a href="#"><i class="fab fa-tiktok"></i></a>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h3>خدماتنا</h3>
-                    <a href="#">تنظيف الفلل</a>
-                    <a href="#">تنظيف الشقق</a>
-                    <a href="#">تنظيف الكنب والسجاد</a>
-                    <a href="#">تنظيف الخزانات</a>
-                    <a href="#">مكافحة الحشرات</a>
-                </div>
-                <div class="footer-col">
-                    <h3>روابط سريعة</h3>
-                    <a href="#home">الرئيسية</a>
-                    <a href="#services">خدماتنا</a>
-                    <a href="#features">لماذا نحن</a>
-                    <a href="#reviews">آراء العملاء</a>
-                    <a href="#contact">اتصل بنا</a>
-                </div>
-                <div class="footer-col">
-                    <h3>تواصل معنا</h3>
-                    <p><i class="fas fa-phone" style="margin-left: 8px; color: var(--accent);"></i> 0560943111</p>
-                    <p><i class="fab fa-whatsapp" style="margin-left: 8px; color: var(--accent);"></i> واتساب</p>
-                    <p><i class="fas fa-map-marker-alt" style="margin-left: 8px; color: var(--accent);"></i> بجدة
-                        ، المملكة العربية السعودية</p>
-                    <p><i class="fas fa-envelope" style="margin-left: 8px; color: var(--accent);"></i> info@cleanlife.sa</p>
-                </div>
-            </div>
-            <div class="copyright">
-                © 2026 كينج كلين  للتنظيف. جميع الحقوق محفوظة. تصميم وتطوير بعناية ❤️
-            </div>
-        </div>
-    </footer>
-
-    <!-- Floating Buttons -->
-    <div class="floating-actions">
-        <a href="tel:0560943111" class="fab call" data-tooltip="اتصل الآن"><i class="fas fa-phone-alt"></i></a>
-        <a href="https://wa.me/9660560943111" target="_blank" class="fab whatsapp" data-tooltip="محادثة واتساب"><i class="fab fa-whatsapp"></i></a>
+    <div class="nav-cta">
+      <a class="btn btn-wa" href="https://wa.me/966561143827" target="_blank">💬 واتساب</a>
+      <button class="burger" id="burger" aria-label="القائمة">☰</button>
     </div>
-<div style="font-family: 'Tajawal', sans-serif; text-align: center; padding: 12px 20px; background: #0a1628; color: #ffffff; font-size: 14px; direction: rtl; line-height: 1.6;">
-    تم التصميم بواسطة 
-    <a href="https://wa.me/201148875106" target="_blank" style="color: #ffb703; text-decoration: none; font-weight: 800;">Mohamed Radwan</a> | 
-    واتساب: 
-    <a href="https://wa.me/201148875106" target="_blank" style="color: #00b4d8; text-decoration: none; font-weight: 800;">01148875106</a>
-</div>ج
-    <script>
-        // Hide Loader
-        window.addEventListener('load', () => {
-            setTimeout(() => document.getElementById('loader').classList.add('hidden'), 600);
-        });
+  </div>
+</header>
 
-        // Navbar Scroll Effect
-        window.addEventListener('scroll', () => {
-            document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
-        });
+<!-- الهيرو -->
+<section class="hero" id="home">
+  <div class="container">
+    <span class="hero-badge">✨ نجار محترف في مكة المكرمة بخبرة تتجاوز ١٥ عامًا</span>
+    <h1>نجار مكة المكرمة..<br><span>فك وتركيب وتفصيل</span> الأبواب وغرف النوم وصيانتها</h1>
+    <p>من فك وتركيب غرف النوم عند الانتقال، إلى تفصيل الأبواب والمطابخ وغرف النوم بأجود أنواع الخشب، فريقنا يصلك أينما كنت في مكة بسرعة والتزام ودقة في التنفيذ، مع ضمان كامل على جميع الأعمال.</p>
+    <div class="hero-btns">
+      <a class="btn btn-amber" href="tel:0561143827">📞 اتصل الآن <span dir="ltr">0561143827</span></a>
+      <a class="btn btn-wa" href="https://wa.me/966561143827" target="_blank">💬 اطلب عبر واتساب</a>
+      <a class="btn btn-ghost" href="#services">تصفح خدماتنا ↓</a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="container stats-grid">
+      <div class="stat reveal"><b><span class="count" data-target="15">0</span>+</b><span>سنة خبرة</span></div>
+      <div class="stat reveal"><b><span class="count" data-target="850">0</span>+</b><span>عمل منجز بنجاح</span></div>
+      <div class="stat reveal"><b>24/7</b><span>خدمة متواصلة</span></div>
+      <div class="stat reveal"><b><span class="count" data-target="100">0</span>٪</b><span>ضمان على الأعمال</span></div>
+    </div>
+  </div>
+</section>
 
-        // Mobile Menu
-        const mobileToggle = document.getElementById('mobileToggle');
-        const navLinks = document.getElementById('navLinks');
-        mobileToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            const icon = mobileToggle.querySelector('i');
-            icon.classList.toggle('fa-bars');
-            icon.classList.toggle('fa-times');
-        });
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-                mobileToggle.querySelector('i').classList.add('fa-bars');
-                mobileToggle.querySelector('i').classList.remove('fa-times');
-            });
-        });
+<!-- الخدمات -->
+<section id="services">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="sec-tag">🛠️ خدماتنا</span>
+      <h2>كل ما يحتاجه منزلك من الخشب.. في مكان واحد</h2>
+      <p>نقدم باقة متكاملة من الخدمات النجرية للمنازل والفلل والشقق في مكة المكرمة، بخامات مضمونة وتنفيذ دقيق.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service reveal"><div class="ico">🛠️</div><h3>فك وتركيب غرف النوم والأثاث</h3><p>فك وتركيب جميع أنواع غرف النوم والأثاث عند الانتقال أو إعادة الترتيب، مع الترقيم والحفظ الآمن للقطع وتركيبها بإحكام في موقعك الجديد.</p><a href="https://wa.me/966561143827" target="_blank">اطلب الخدمة ←</a></div>
+      <div class="service reveal"><div class="ico">🚪</div><h3>تفصيل وتركيب الأبواب الخشبية</h3><p>تفصيل أبواب داخلية وخارجية وأبواب أمريكية بتصاميم عصرية وكلاسيكية، مع معالجة كاملة ضد الرطوبة والحشرات وتركيب الإكسسوارات والأقفال.</p><a href="https://wa.me/966561143827" target="_blank">اطلب الخدمة ←</a></div>
+      <div class="service reveal"><div class="ico">🛏️</div><h3>تفصيل غرف النوم حسب الطلب</h3><p>غرف نوم كاملة مفصلة على مساحتك وذوقك: دواليب حائط، سرائر، طاولات، ولوحات رأس مخملة، بخامات فاخرة وتشطيبات راقية.</p><a href="https://wa.me/966561143827" target="_blank">اطلب الخدمة ←</a></div>
+      <div class="service reveal"><div class="ico">🔧</div><h3>صيانة وإصلاح الأثاث والأبواب</h3><p>إصلاح الأبواب المعلقة والدواليب والأدراج، تغيير المفصلات والسكك، معالجة الانتفاخات والصوت المزعج، وتجديد الأثاث القديم ليعود كالجديد.</p><a href="https://wa.me/966561143827" target="_blank">اطلب الخدمة ←</a></div>
+      <div class="service reveal"><div class="ico">🍳</div><h3>تفصيل المطابخ الخشبية</h3><p>مطابخ أمريكية وعادية مفصلة بالمقاس، بخامات مقاومة للحرارة والرطوبة، مع تركيب الإكسسوارات والهوايات وتنظيم الأدراج بأحدث الحلول.</p><a href="https://wa.me/966561143827" target="_blank">اطلب الخدمة ←</a></div>
+      <div class="service reveal"><div class="ico">👔</div><h3>غرف الملابس (الدريسنج رووم)</h3><p>تصميم وتنفيذ غرف ملابس مفتوحة ومغلقة بتقسيمات ذكية تستغل كل سنتيمتر، مع إضاءة داخلية ووحدات أدراج وتعليق تناسب احتياجاتك.</p><a href="https://wa.me/966561143827" target="_blank">اطلب الخدمة ←</a></div>
+      <div class="service reveal"><div class="ico">🪵</div><h3>الديكورات الخشبية والمجالس</h3><p>تكسيات جدران خشبية، أسقف ديكورية، مكتبات ورفوف معلقة، وجلسات ومجالس عربية بلمسات عصرية تضيف دفئًا وفخامة لمنزلك.</p><a href="https://wa.me/966561143827" target="_blank">اطلب الخدمة ←</a></div>
+      <div class="service reveal"><div class="ico">⛱️</div><h3>البرجولات والمظلات الخشبية</h3><p>تنفيذ برجولات ومظلات خشبية للحدائق والأسطح بجودة عالية ومعالجة ضد العوامل الجوية، لتستمتع بجلسات خارجية أنيقة طوال العام.</p><a href="https://wa.me/966561143827" target="_blank">اطلب الخدمة ←</a></div>
+      <div class="service reveal"><div class="ico">🪚</div><h3>تركيب الباركيه والأرضيات الخشبية</h3><p>توريد وتركيب الباركيه والأرضيات الخشبية بجميع الأنواع والألوان، مع تسوية ومعالجة كاملة وتثبيت يدوم لسنوات دون صوت أو فراغات.</p><a href="https://wa.me/966561143827" target="_blank">اطلب الخدمة ←</a></div>
+    </div>
+  </div>
+</section>
 
-        // Scroll Animations (Intersection Observer)
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    // Trigger counters if it's a stat card
-                    const counters = entry.target.querySelectorAll('.counter');
-                    counters.forEach(counter => {
-                        const target = +counter.getAttribute('data-target');
-                        const duration = 1500;
-                        const startTime = performance.now();
-                        function update(currentTime) {
-                            const elapsed = currentTime - startTime;
-                            const progress = Math.min(elapsed / duration, 1);
-                            counter.textContent = Math.floor(progress * target).toLocaleString('ar-SA');
-                            if (progress < 1) requestAnimationFrame(update);
-                            else counter.textContent = target.toLocaleString('ar-SA') + '+';
-                        }
-                        requestAnimationFrame(update);
-                    });
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.15 });
+<!-- لماذا نحن -->
+<section class="why" id="why">
+  <div class="container">
+    <div class="why-grid">
+      <div class="why-img reveal">
+        <img src="craft.jpg" alt="نجار مكة - حرفية في العمل">
+        <div class="exp"><b>+15</b>عامًا من الإتقان</div>
+      </div>
+      <div class="why-txt reveal">
+        <span class="sec-tag">💎 لماذا نحن؟</span>
+        <h2>حرفية تُلمس في التفاصيل.. والتزام تشعر به من أول اتصال</h2>
+        <p>نحن لسنا مجرد نجارين؛ نحن شركاء في جمال بيتك. نبدأ كل عمل بمعاينة دقيقة ومقاسات صحيحة، وننفذه بخامات مختارة بعناية وأدوات حديثة، ونسلّمه نظيفًا وفي الموعد المتفق عليه — لأن سمعتنا في مكة تُبنى قطعةً قطعة منذ أكثر من خمسة عشر عامًا.</p>
+        <ul class="checks">
+          <li><i>✓</i> سرعة وصول لجميع أحياء مكة المكرمة في نفس اليوم</li>
+          <li><i>✓</i> خامات خشب مستوردة ومضمونة ضد الرطوبة والحشرات</li>
+          <li><i>✓</i> أسعار منافسة وعروض دورية وتقدير مجاني للتكلفة</li>
+          <li><i>✓</i> ضمان حقيقي على الفك والتركيب والتفصيل والصيانة</li>
+          <li><i>✓</i> فريق فني مدرّب ونظافة تامة بعد إنهاء العمل</li>
+        </ul>
+      </div>
+    </div>
+    <div class="features">
+      <div class="feature reveal"><div class="ico">⚡</div><h4>استجابة فورية</h4><p>نرد على اتصالك وواتسابك خلال دقائق ونصلك بأسرع وقت.</p></div>
+      <div class="feature reveal"><div class="ico">🛡️</div><h4>ضمان شامل</h4><p>ضمان على كل قطعة نفصلها أو نركبها أو نصينها.</p></div>
+      <div class="feature reveal"><div class="ico">💰</div><h4>أسعار عادلة</h4><p>تسعير واضح ومسبق بدون مفاجآت أو تكاليف خفية.</p></div>
+      <div class="feature reveal"><div class="ico">🌟</div><h4>تشطيب فاخر</h4><p>دقة في التنفيذ ولمسة جمالية تظهر في أدق التفاصيل.</p></div>
+    </div>
+  </div>
+</section>
 
-        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+<!-- خطوات العمل -->
+<section class="steps">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="sec-tag">📋 طريقة عملنا</span>
+      <h2>أربع خطوات تفصلك عن عمل متقن</h2>
+      <p>منهجية واضحة ومجرّبة نطبقها في كل طلب، صغيرًا كان أم كبيرًا.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step reveal"><div class="num">١</div><h4>اتصل أو راسلنا</h4><p>تواصل هاتفيًا أو عبر واتساب واذكر لنا طلبك وسنرد فورًا.</p></div>
+      <div class="step reveal"><div class="num">٢</div><h4>معاينة ومقاسات مجانية</h4><p>نصلك لمعاينة الموقع وأخذ المقاسات وتقديم تقدير واضح للتكلفة.</p></div>
+      <div class="step reveal"><div class="num">٣</div><h4>تنفيذ بأجود الخامات</h4><p>ننفذ العمل في ورشتنا أو موقعك بدقة والتزام بالموعد المتفق عليه.</p></div>
+      <div class="step reveal"><div class="num">٤</div><h4>تسليم مع الضمان</h4><p>نسلّم العمل بعد تنظيف الموقع، مع ضمان ومتابعة بعد التسليم.</p></div>
+    </div>
+  </div>
+</section>
 
-        // Testimonial Slider
-        const track = document.getElementById('track');
-        const dotsContainer = document.getElementById('sliderNav');
-        const testimonials = track.children;
-        let currentSlide = 0;
+<!-- المعرض -->
+<section id="gallery">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="sec-tag">📸 من أعمالنا</span>
+      <h2>جودة تتحدث عن نفسها</h2>
+      <p>نماذج مختارة من أعمالنا في التفصيل والتركيب والديكور داخل مكة المكرمة.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="g-item reveal"><img src="doors.jpg" alt="تفصيل أبواب خشبية في مكة"><div class="cap">🚪 باب خشبي مفصل بتصميم هندسي فاخر</div></div>
+      <div class="g-item reveal"><img src="bedroom.jpg" alt="تفصيل غرف نوم في مكة"><div class="cap">🛏️ غرفة نوم مفصلة مع دولاب حائط ولوحة رأس</div></div>
+      <div class="g-item reveal"><img src="kitchen.jpg" alt="تفصيل مطابخ في مكة"><div class="cap">🍳 تركيب مطبخ خشبي مفصل بالمقاس</div></div>
+      <div class="g-item reveal"><img src="majlis.jpg" alt="ديكورات خشبية ومجالس في مكة"><div class="cap">🪵 تكسيات جدران ومكتبة خشبية لمجلس عصري</div></div>
+      
+      <div class="g-item reveal"><img src="hero.jpg" alt="فك وتركيب غرف النوم في مكة"><div class="cap">🛠️ فك وتركيب غرف النوم بدقة واحترافية</div></div>
+    </div>
+  </div>
+</section>
 
-        for(let i=0; i<testimonials.length; i++) {
-            const dot = document.createElement('div');
-            dot.classList.add('slider-dot');
-            if(i===0) dot.classList.add('active');
-            dot.addEventListener('click', () => goToSlide(i));
-            dotsContainer.appendChild(dot);
-        }
+<!-- المقالات -->
+<section class="articles" id="articles">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="sec-tag">📚 مقالات ونصائح</span>
+      <h2>خبرة النجارين بين يديك</h2>
+      <p>محتوى عملي نكتبه من خبرة الميدان، ليساعدك على اختيار الأفضل والعناية بأثاثك الخشبي.</p>
+    </div>
+    <div class="articles-grid">
 
-        function goToSlide(index) {
-            currentSlide = index;
-            track.style.transform = `translateX(${index * 100}%)`;
-            document.querySelectorAll('.slider-dot').forEach((d,i) => d.classList.toggle('active', i===index));
-        }
+      <article class="article reveal">
+        <img src="doors.jpg" alt="اختيار خشب الأبواب">
+        <div class="body">
+          <div class="meta"><b>دليل المشتري</b><span>✦ قراءة ٣ دقائق</span></div>
+          <h3>كيف تختار الخشب المناسب لأبواب منزلك في مكة؟</h3>
+          <p class="excerpt">ليس كل خشب يصلح لكل باب.. تعرّف على الفروق بين التيك والبلوط والزان والمDF، وأيهما الأنسب للأبواب الخارجية والداخلية في أجواء مكة.</p>
+          <button class="read-more">اقرأ المقال كاملاً +</button>
+          <div class="full">
+            <p>تتميز أجواء مكة المكرمة بحرارتها العالية وتفاوت نسب الرطوبة، لذلك يجب اختيار أخشاب عالية الكثافة قليلة التأثر بالتمدد الحراري. للأبواب الخارجية نرشّح خشب التيك والبلوط لمقاومتهما العالية للالتواء والحشرات، بينما تكفي الأخشاب الاقتصادية للأبواب الداخلية.</p>
+            <p>أما إذا كانت ميزانيتك محدودة، فخياري MDF عالي الكثافة مع دهانات حديثة صديقة للبيئة يعطيان مظهرًا أنيقًا ومتانة مقبولة داخل المنزل، بشرط إبعادهما عن مصادر الرطوبة المباشرة.</p>
+            <p>قبل اتخاذ قرارك، افحص جودة التشطيب وسماكة الضلف ونوع الإكسسوارات، والأهم: استشر نجارًا متخصصًا يزور موقعك ويقترح الأنسب لمساحتك وميزانيتك — وهذه خدمة نقدمها لك مجانًا.</p>
+          </div>
+        </div>
+      </article>
 
-        setInterval(() => {
-            currentSlide = (currentSlide + 1) % testimonials.length;
-            goToSlide(currentSlide);
-        }, 5000);
+      <article class="article reveal">
+        <img src="majlis.jpg" alt="فك وتركيب غرف النوم">
+        <div class="body">
+          <div class="meta"><b>نصائح الانتقال</b><span>✦ قراءة دقيقتان</span></div>
+          <h3>فك وتركيب غرف النوم عند الانتقال.. لماذا تحتاج نجارًا محترفًا؟</h3>
+          <p class="excerpt">ناقل على بيت جديد؟ لا تفك غرف نومك بنفسك قبل أن تقرأ هذه السطور، فقد توفر على نفسك آلاف الريالات.</p>
+          <button class="read-more">اقرأ المقال كاملاً +</button>
+          <div class="full">
+            <p>التجربة تقول إن الفك العشوائي يتسبب في كسر المفصلات، وفقد المسامير، وتشقق الألواح، وفقدان ضبط الأدراج — أضرار قد تكلفك إصلاحات باهظة أو شراء أثاث جديد بالكامل.</p>
+            <p>النجار المحترف يفك القطع بترتيب مرقّم، ويغلّف الأجزاء الحساسة، ثم يعيد تركيبها في منزلك الجديد بضبط كامل للموازنة والأدراج والأبواب، فتصل أثاثك سليمًا وكأنه لم يتحرك.</p>
+            <p>في «نجار مكة» نوفر خدمة متكاملة: فك احترافي، تنسيق مع الناقل، ثم تركيب وتسوية كاملة في البيت الجديد — غالبًا في زيارة واحدة وبتكلفة أقل مما تتوقع.</p>
+          </div>
+        </div>
+      </article>
 
-        // Form Submission
-        document.getElementById('contactForm').addEventListener('submit', (e) => {
-            e.preventDefault();
-            const btn = e.target.querySelector('button');
-            const originalText = btn.innerHTML;
-            btn.innerHTML = '<i class="fas fa-check"></i> تم الإرسال بنجاح!';
-            btn.style.background = '#10b981';
-            setTimeout(() => {
-                btn.innerHTML = originalText;
-                btn.style.background = '';
-                e.target.reset();
-            }, 3000);
-        });
-    </script>
+      <article class="article reveal">
+        <img src="craft.jpg" alt="صيانة الأثاث الخشبي">
+        <div class="body">
+          <div class="meta"><b>العناية بالأثاث</b><span>✦ قراءة ٣ دقائق</span></div>
+          <h3>٧ نصائح ذهبية لإطالة عمر أثاثك الخشبي</h3>
+          <p class="excerpt">عادات بسيطة تقوم بها في بيتك تضاعف عمر أثاثك الخشبي وتحافظ على لمعانه لسنوات طويلة.</p>
+          <button class="read-more">اقرأ المقال كاملاً +</button>
+          <div class="full">
+            <ul>
+              <li>أبعد الخشب عن أشعة الشمس المباشرة لمنع التشقق وتغير اللون.</li>
+              <li>امسح الأسطح بقطنة قطنية شبه جافة، وتجنب الماء الوفير والمنظفات القوية.</li>
+              <li>استخدم ملمع خشب طبيعي كل ستة أشهر لتغذية الألياف والحفاظ على اللمعة.</li>
+              <li>لا تُحمّل الأرفف أكثر من طاقتها حتى لا تنحني مع الوقت.</li>
+              <li>شدّ المفصلات والبراغي المرتخية فور ملاحظتها قبل أن تتحول لخلل أكبر.</li>
+              <li>انتبه لأي تسربات مياه قريبة من الدواليب والمطابخ، فالرطوبة عدو الخشب الأول.</li>
+              <li>عالج الخدوش البسيطة مبكرًا قبل أن تتوسع وتتطلب إعادة دهان كاملة.</li>
+            </ul>
+            <p>وإذا احتجت أي إصلاح أو صيانة، فريقنا جاهز للوصول إليك في أي حي من أحياء مكة على الرقم <span dir="ltr">0561143827</span>.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="article reveal">
+        <img src="bedroom.jpg" alt="غرف نوم مفصلة">
+        <div class="body">
+          <div class="meta"><b>تصميم داخلي</b><span>✦ قراءة دقيقتان</span></div>
+          <h3>غرف النوم المفصّلة حسب الطلب.. فخامة تناسب ذوقك ومساحتك</h3>
+          <p class="excerpt">لماذا يتجه الأذكياء اليوم إلى تفصيل غرف النوم بدل شراء الجاهز؟ الإجابة في ثلاثة أسباب.</p>
+          <button class="read-more">اقرأ المقال كاملاً +</button>
+          <div class="full">
+            <p>الغرف الجاهزة تُصنع لمقاسات قياسية، بينما بيوتنا تختلف في الزوايا والفتحات والارتفاعات — النتيجة فجوات مزعجة ومساحات مهدرة. التفصيل يحل هذه المشكلة جذريًا باستغلال كل سنتيمتر في غرفتك.</p>
+            <p>ثانيًا، أنت تتحكم في كل شيء: نوع الخشب، لون التشطيب، شكل المقابض، تقسيمات الدولاب من الداخل، وحتى الإضاءة — فتخرج الغرفة معبرة عن شخصيتك لا عن قالب المصنع.</p>
+            <p>وأخيرًا، الجودة: القطع المفصّلة تُبنى لتدوم، بخامات تختارها عينك وضمان تتحمله ورشتنا. مع «نجار مكة» تحصل على معاينة مجانية واقتراح تصميم يناسب ميزانيتك قبل البدء.</p>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- آراء العملاء -->
+<section id="testi">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="sec-tag">💬 آراء عملائنا</span>
+      <h2>كلامهم شهادة نعتز بها</h2>
+      <p>ثقة أهل مكة هي رأس مالنا الحقيقي.</p>
+    </div>
+    <div class="testi-grid">
+      <div class="testi reveal"><div class="stars">★★★★★</div><p>"فكوا غرفة النوم ونقلوها وركبوها في البيت الجديد بدقة ونظافة والتزام بالموعد، والأثاث رجع أثبت من أول. ناس تستاهل الثقة."</p><div class="who"><div class="av">أ</div><div><b>أبو عبدالله الحربي</b><span>العزيزية</span></div></div></div>
+      <div class="testi reveal"><div class="stars">★★★★★</div><p>"فصّلوا لي دولاب حائط وأبواب داخلية، شغل مرتب وتشطيب فاخر وسعرهم كان أرحم من غيرهم. أنصح فيهم وبقوة."</p><div class="who"><div class="av">ف</div><div><b>أم فيصل</b><span>الشوقية</span></div></div></div>
+      <div class="testi reveal"><div class="stars">★★★★★</div><p>"اتصلت الظهر على أبواب المطبخ وكانت معلّقة، جاؤوا بنفس اليوم وظبطوها وغيروا المفصلات وصارت مثل الجديدة. خدمة سريعة ومحترمة."</p><div class="who"><div class="av">م</div><div><b>محمد القرني</b><span>العوالي</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- بانر الاتصال -->
+<section class="cta" id="contact">
+  <div class="container reveal">
+    <h2>محتاج نجار في مكة الآن؟ 🛠️</h2>
+    <p>اتصل أو أرسل واتساب وسنرد عليك خلال دقائق — خدمة سريعة لجميع الأحياء وعلى مدار الساعة.</p>
+    <a class="phone" href="tel:0561143827">0561143827</a>
+    <div class="hero-btns" style="justify-content:center">
+      <a class="btn btn-amber" href="tel:0561143827">📞 اتصال مباشر</a>
+      <a class="btn btn-wa" href="https://wa.me/966561143827" target="_blank">💬 مراسلة واتساب</a>
+    </div>
+  </div>
+</section>
+
+<!-- الفوتر -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a href="#" class="logo"><span class="icon">🪚</span><span>نجار مكة<small style="color:#9b8b74">فك · تركيب · تفصيل · صيانة</small></span></a>
+        <p>ورشة نجارة متكاملة في مكة المكرمة، نخدم المنازل والفلل والشقق بخدمة فك وتركيب وتفصيل الأبواب وغرف النوم والمطابخ وصيانة الأثاث، بخبرة تتجاوز ١٥ عامًا وضمان على كل الأعمال.</p>
+      </div>
+      <div>
+        <h4>روابط سريعة</h4>
+        <div class="foot-links">
+          <a href="#home">الرئيسية</a>
+          <a href="#services">خدماتنا</a>
+          <a href="#gallery">أعمالنا</a>
+          <a href="#articles">مقالات</a>
+          <a href="#contact">اتصل بنا</a>
+        </div>
+      </div>
+      <div>
+        <h4>خدماتنا</h4>
+        <div class="foot-links">
+          <a href="#services">فك وتركيب الأثاث</a>
+          <a href="#services">تفصيل الأبواب</a>
+          <a href="#services">غرف النوم</a>
+          <a href="#services">المطابخ</a>
+          <a href="#services">صيانة الأثاث</a>
+        </div>
+      </div>
+      <div>
+        <h4>تواصل معنا</h4>
+        <p>📞 هاتف / واتساب: <a href="tel:0561143827" dir="ltr">0561143827</a></p>
+        <p>💬 واتساب: <a href="https://wa.me/966561143827" target="_blank">اضغط للمراسلة</a></p>
+        <p>🕋 مكة المكرمة — جميع الأحياء</p>
+        <p>🕐 متاحون 24 ساعة طوال الأسبوع</p>
+        <h4 style="margin-top:18px">نخدم أحياء:</h4>
+        <div class="areas">
+      <span>الشوقية</span><span>العوالي</span><span>النسيم</span><span>العتيبية</span><span>الزايدي</span><span>الرصيفة</span><span>بطحاء قريش</span><span>الشرائع</span><span>ولي العهد</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copy">© <span id="year"></span> <b>نجار مكة المكرمة</b> — جميع الحقوق محفوظة ✦ صُنع بحب وإتقان 🪵</div>
+</footer>
+
+<!-- أزرار عائمة -->
+<div class="floats">
+  <a class="wa" href="https://wa.me/966561143827" target="_blank" aria-label="واتساب">💬</a>
+  <a class="call" href="tel:0561143827" aria-label="اتصال">📞</a>
+</div>
+
+<script>
+// الهيدر عند التمرير
+const header = document.getElementById('header');
+window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 40));
+
+// قائمة الجوال
+const burger = document.getElementById('burger');
+const navLinks = document.getElementById('navLinks');
+burger.addEventListener('click', () => navLinks.classList.toggle('open'));
+navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+// الظهور عند التمرير + عدّادات الأرقام
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      e.target.querySelectorAll('.count').forEach(c => {
+        const t = +c.dataset.target, step = Math.max(1, Math.round(t / 60));
+        let v = 0;
+        const iv = setInterval(() => { v += step; if (v >= t) { v = t; clearInterval(iv); } c.textContent = v; }, 25);
+      });
+      io.unobserve(e.target);
+    }
+  });
+}, { threshold: .15 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+// فتح وإغلاق المقالات
+document.querySelectorAll('.read-more').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const art = btn.closest('.article');
+    art.classList.toggle('open');
+    btn.textContent = art.classList.contains('open') ? 'إغلاق المقال −' : 'اقرأ المقال كاملاً +';
+  });
+});
+
+// السنة تلقائيًا
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
